@@ -1,64 +1,157 @@
 <html>
 <head>
-<title>homepage</title>
+<title>index</title>
 <style>
-  body {
-  background-color: #f6d55c;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-  button {
+body
+{
+display:flex;
+justify-items:center;
+align-items:center;
+min-height:100vh;
+}
+
+button {
   background-color: white;
   width: 10%;
   height:90%;
   border-style: hidden;
+
+
 } 
 
-#menudiv {
-background-color:  white;
- width: 100%;
- height:150px;
+.container
+{
+width:100% ;
+height:100%;
+display:flex;
+flex-wrap:wrap;
+margin:10px;
+gap:10px;
+
 }
 
+.container>div{
+flex:100%;
+}
 
+.subcontainer{
+display:flex;
+flex-wrap:wrap;
+gap:  10px;
+} 
 
+.navbar{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:20px;
+border-radius:3px;
+}
 
+.navbar>button{
+flex:100%;
+}
 
+.sidebar{
+flex:1;
+background:green;
+}
 
-  </style>
+.maincontainer{
+flex:4; 
+display:flex;
+flex-wrap:wrap;
+gap:10px
+}
+
+.maincontainer>div{
+flex:100%;
+}
+
+.main{
+min-height:50px;
+background:white;
+}
+
+.content{
+ display:flex;
+ flex-wrap:wrap;
+ gap:10px;
+}
+
+.content1,.content2,.content3{
+min-height:300px;
+min-width:500px;
+background:blue;
+ }
+
+.footer{
+flex:100%;
+min-height:50px;
+background:pink;
+}
+
+.sidebar,.main,.content>div{
+display:flex;
+justify-content:center;
+border-radius:3px
+}
+
+@media only screen and (max-width:768px)
+{
+ .subcontainer{
+  flex-direction:column;
+ }
+.sidebar
+{
+min-height:50px;
+}
+
+}
+
+@media only screen and (max-width:550px)
+{
+ .content>div{
+  flex:100%;
+ }
+.content1,.content2,.content3
+{
+min-height:170px;
+}
+
+}
+
 </style>
 </head>
 <body>
-<br>
-  <div id="menudiv">
+<div class="container"> 
+  <div class="navbar">
 <button>HOME</button>
 <button>ABOUT US</button>
 <button>OUR TEAM</button>
 <button>SERVICES</button>
 <button>CONTACT US</button>
-<button>BOOK AN APPOINTMENT</button>
-  </div>
+<button>BOOK AN APPOINTMENT</button></div>
 
-<div id="introdiv">
-<p>
-welcome to demo Life health care
-Quality Care, Right Where You Are
-At MP Save Life Health Care, we are dedicated to providing comprehensive and compassionate healthcare services right in the comfort of your home. From doctor visits and physiotherapy to critical care and ICU setups, our team of experienced professionals is committed to delivering personalized care tailored to your needs. Whether it’s for a baby, an elderly loved one, or anyone in between, we bring quality medical support and peace of mind directly to your doorstep. Experience the convenience and reliability of healthcare that truly cares.
-
-Personalized Home Care
-Comprehensive Services
-Experienced Professionals
-24/7 Availability
-Quality and Compassion
-Convenience and Comfort
-
-</p>
+  <div class="subcontainer">
+    <div class="sidebar">sidebar</div>
+    
+    <div class="maincontainer">
+      <div class="main">
+ 
 </div>
-
-<div id="footerdiv">
-<p>
-We’re here to provide the answers and support you need. Reach out to MP Save Life Health Care, and let our friendly team assist you with your healthcare needs.
-</p>
-<p>
+      
+      <div class="content">
+        <div class="content1">content1</div>
+        <div class="content2">content2</div>
+        <div class="content3">content3</div>
+        <div class="footer">
 get in touch
 We’d love to hear from you! Get in touch with MP Save Life Health Care today, and let us help you with our expert healthcare services.
 
@@ -66,16 +159,21 @@ We’d love to hear from you! Get in touch with MP Save Life Health Care today, 
 +91-70194-26673, +91-86183-19975
 mpsavelifehealthcare001@gmail.com
 Social media :
-</p>
-<p>
+
 Other Branch
 We’d love to hear from you! Get in touch with MP Save Life Health Care today, and let us help you with our expert healthcare services.
 
 101/1A - First Floor Perumalpet,Alangayam Cross Road Vaniyambadi 635751
 +91-70194-26673, +91-86183-19975
 demohealthcare001@gmail.com
-</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+  
 
-</body>
+
+
+</body
 </html>
