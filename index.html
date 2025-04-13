@@ -12,7 +12,8 @@ mainbar.style.display='none';
 function hideSidebar(){
 const sidebar=document.querySelector('.sidebar');
 sidebar.style.display='none';
-
+const mainbar=document.querySelector('.mainbar');
+mainbar.style.display='flex';
 }
 </script>
 <style>
@@ -27,7 +28,6 @@ body
 display:flex;
 justify-items:center;
 align-items:center;
-min-height:100vh;
 min-height:100vh;
 background-color: #00498d; 
 }
@@ -104,7 +104,7 @@ background:white;
 
 .content1,.content2,.content3{
 min-height:300px;
-
+color:white;
 
  }
 
